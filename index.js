@@ -84,3 +84,94 @@ let multiply = function(x) {
 
 let multiplyByTwo = multiply(2)
 multiplyByTwo(5)
+
+// Answer 1 = Call 
+// var obj  = {num:2}
+
+// var addToThis = function(a) 
+
+// {
+
+//     return this.num + a
+
+// }
+
+// console.log( addToThis.call(obj, 3))
+
+
+
+// //Call method takes object and an arguments 
+
+
+
+// o/p = 5
+
+
+
+// Answer 2 = Apply
+// var obj  = {num:2}
+
+// var addToThis = function(a, b, c) 
+
+// {
+
+//     return this.num + a + b + c
+
+// }
+
+
+
+// let arr = [1,2,3]
+
+// console.log( addToThis.apply(obj, arr))
+
+// //apply method takes an object and array of list as an argument
+
+
+
+// o/p = 8
+
+
+
+// Answer 3 = Bind
+// var obj  = {num:2}
+
+// var addToThis = function(a, b, c) 
+
+// {
+
+//     return this.num + a + b+c
+
+// }
+
+// let arr = [1,2,3]
+
+// var bound =  addToThis.bind(obj)
+
+// console.log(bound(1,2,3,));
+
+
+
+// o/p = 8
+
+
+
+// Answer 4 
+// var student = {age:20}
+
+// var printingTheAge = function() 
+
+// {
+
+//     console.log(this.age);
+
+// }
+
+
+
+// printingTheAge.call(student)
+
+
+
+// o/p = 20
+
